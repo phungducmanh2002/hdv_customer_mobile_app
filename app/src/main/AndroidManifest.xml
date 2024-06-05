@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hotel_customer"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.activity.user.WellComeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.user.CreateCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.user.UpdateAvatarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.user.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.user.SigninActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.user.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.hotel.HotelDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.hotel.HotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.hotel.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.booking.PaymentBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.booking.BookRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.booking.BookingHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

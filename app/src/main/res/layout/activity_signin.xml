@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.user.SigninActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_fill_rounded_white"
+        android:layout_margin="20dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_hotel_login"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/home"
+            />
+
+        <com.example.hotel_customer.ui.core.myui.components.item.input.Input
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:inputHint="email"
+            app:inputLabel="email"
+            android:id="@+id/ipEmail"
+            app:inputText="kim"
+            />
+
+        <com.example.hotel_customer.ui.core.myui.components.item.input.Input
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:inputHint="password"
+            app:inputLabel="password"
+            android:id="@+id/ipPassowrd"
+            android:layout_marginTop="20dp"
+            app:inputText="1"
+            app:inputType="password"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu mật khẩu"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Đăng nhập"
+            android:background="@drawable/bg_fill_rounded_blue"
+            android:textColor="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/btnSignin"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

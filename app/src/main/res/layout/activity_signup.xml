@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.user.SignupActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="50dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_back"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/back"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="quay lại"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.example.hotel_customer.ui.core.myui.components.item.input.Input
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:inputHint="Email"
+                    app:inputLabel="Email"
+                    android:id="@+id/ipEmail"
+                    />
+
+                <com.example.hotel_customer.ui.core.myui.components.item.input.Input
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:inputHint="Password"
+                    app:inputLabel="Password"
+                    android:id="@+id/ipPassowrd"
+                    android:layout_marginTop="20dp"
+                    app:inputType="password"
+                    />
+                <com.example.hotel_customer.ui.core.myui.components.item.input.Input
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:inputHint="Password"
+                    app:inputLabel="Nhập lại password"
+                    android:id="@+id/ipPassowrd2"
+                    android:layout_marginTop="20dp"
+                    app:inputType="password"
+                    />
+                <com.example.hotel_customer.ui.core.myui.components.item.input.Input
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:inputHint="Họ"
+                    app:inputLabel="Họ"
+                    android:id="@+id/ipFirstName"
+                    android:layout_marginTop="20dp"
+                    />
+                <com.example.hotel_customer.ui.core.myui.components.item.input.Input
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:inputHint="Tên"
+                    app:inputLabel="Tên"
+                    android:id="@+id/ipLastName"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giới tính"
+                        android:textStyle="bold"
+                        />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="nam"
+                            android:layout_marginRight="20dp"
+                            android:id="@+id/genderMale"
+                            android:checked="true"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="nữ"
+                            android:layout_marginRight="20dp"
+                            android:id="@+id/genderFemale"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="khác"
+                            android:id="@+id/genderOrther"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <com.example.hotel_customer.ui.core.myui.components.item.pickDate.PickDate
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:pickDateLabel="Ngày sinh"
+                    android:id="@+id/pdBirthday"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Tiếp"
+                    android:background="@drawable/bg_fill_rounded_blue"
+                    android:textColor="@color/white"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:id="@+id/btnNext"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
